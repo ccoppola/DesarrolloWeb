@@ -10,6 +10,7 @@ body{
 li{
 	list-style: none;
 }
+/*Home*/
 #contenedor{
 	display: grid;
 	grid-template-areas:
@@ -26,7 +27,6 @@ li{
 	margin: auto;
 }
 .bgImageFullScreen{
-	grid-area: imagen;
 	height: 35vh;
 	background-image: url('../assets/banner2.jpg');
 	background-position: center;
@@ -40,7 +40,9 @@ li{
 	background-color: #6f7ccb;
 	background-size: cover;	
 }
-
+#header:hover{
+	background-color: #5363b1;
+}
 #header .nav li{
 	display: inline-block;
 	margin-left: 2%;
@@ -69,7 +71,12 @@ li{
 	display: inline-grid;
 	margin: 10px;
 	padding: 20px;
+	transition: all 200ms ease-in-out;
 }
+.logosMarcas .logos:hover{
+	transform: scale(1.1);
+}
+
 #tituloProductos{
 	grid-area: titulo;
 	margin: auto;
@@ -97,6 +104,7 @@ li{
 	height: 100px;
 	width: 150px;
 }
+
 .centrado{
 	margin-left: auto;
     margin-right: auto;
@@ -111,6 +119,7 @@ li{
 	border: #000000 1px dotted;
 	justify-content: center;
 	box-sizing: content-box;
+
 }
 .footer{
 	grid-area: footer;
@@ -148,68 +157,9 @@ iframe{
 	border:  0;
 	margin-top: 5px;	
 }
-@media all and (max-width: 768px){
-	.bgImageFullScreen{
-		background-image: url('../assets/logoChico4.jpg');
-		background-size: center;		
-	}
-	#header{
-		background-color: #6f7ccb;
-		background-size: cover;
-		padding-top: 1vh;
-		height: 20vh;
-		font-size: 15px;		
-	}
-	#header .nav li{
-		grid-area: nav;
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-		font-size: 14px;
-	}
-	.logos{
-		flex-direction: column;
-		text-align: left;
-	}
-	#tituloProductos{
-		grid-area: titulo;
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-		margin: 50px;
-		font-weight: 500;
-		font-size: 20px;
-		margin-bottom: 5px;		
-	}
-	.productosDestacados{
-		grid-area: productos;
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-	}
-	.productosDestacados .box p{
-		font-size: 12px;
-	}
-	.box{
-		width:auto;
-		margin: 20px;
-	}
-	.footer{
-		grid-area: footer;
-		display: flex;
-		flex-direction: column;
-		background-position: left;
-		margin: 20px;
-		height: auto;
-	}
-	.boxFooter p{
-		font-size: 14px;
-	}
-	.boxFooter li{
-		margin-top: 5px;
-	}
-}
-#contenedorNovedades{
+
+/*Novedades*/
+.contenedorNovedades{
 	display: grid;
 	grid-template-areas:
 	"nav nav nav"
@@ -224,14 +174,13 @@ iframe{
 .novedades{
 	margin: 50px;
 	padding-top: 5vh;
-	height: 150vh;
+	height: 200vh;
 	text-align: center;
 	background-color: #fff;
 	background-size: cover;
 	border-color: #000000;
 	border-style: dotted;
 	border-width: 0.5px;
-
 }
 .novedades .titulo{
 	font-family: 'Jost', sans-serif;
@@ -254,6 +203,16 @@ iframe{
 	font-size: 16px;
 	color: #031882;
 }
+#imagenes{
+	display: inline-block;	
+}
+.boxNovedades{
+	transition: all 200ms ease-in-out;
+}
+#imagenes .translate:hover{
+	transform: scale(1.1);
+}
+
 .boxNovedades img{
 	margin: 20px;
 	height: 160px;
@@ -268,40 +227,9 @@ iframe{
 	border-radius: 10px;
 	padding: 6px;  	
 }
-@media all and (max-width: 768px){
-	.novedades{
-		grid-area: novedades;
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-		box-sizing: border-box;
-		height:auto;
-		border: none;
-	}
-	.novedades .titulo{
-		grid-area:novedades;
-		display: flex;
-		flex-direction: column;
-		margin: auto;		
-		font-size:20px;
-		text-align:left;
-		margin: 10px;
-	}
-	.novedades .boxNovedades{
-		font-size: 12px;
-		width:auto;
-		margin: 20px;
-		padding: 20px;
-	}
-	.boxNovedades img{
-		height: 100px;
-		width: 120px;
-	}
-	.botones{
-		font-size: 10px;
-		margin: 15px;	
-	}
-}
+
+/*Contacto*/
+
 #contenedorContacto{
 	display: grid;
 	grid-template-areas:
@@ -357,40 +285,9 @@ iframe{
 	padding: 10px;
 	margin: 10px;
 }
-@media all and (max-width: 768px){
-	#contenedorContacto{
-		grid-template-areas:
-		"nav nav nav"
-		"mapa"
-		"formulario"
-		"footer";
-	}
-	.cajaContenedora{
-		border: none;
-	}
-	.mapaContacto iframe{
-		display: flex;
-		flex-direction: column;
-		justify-items: left;
-		width: auto;
-		height: auto;
-	}
-	.formulario{
-		text-align: left;	
-	}
-	.formulario p{
-		font-size: 18px;
-		text-align: left;	
-	}
-	.aceptoTerminos{
-		font-size: 10px;
-	}
-	.cajas{
-		font-size: 10px;
-		padding: 5px;
-		margin:5px;
-	}
-}
+
+/*Lista de precios*/
+
 #contenedorPrecios{
 	display: grid;
 	grid-template-areas:
@@ -466,43 +363,8 @@ iframe{
 	padding: 6px;
 	margin: 20px;  
 }
-@media all and (max-width: 768px){
-	.formularioIngreso{
-		border: none;
-	}
-	.formularioIngreso p{
-		font-size: 20px;
-	}
-	.olvidoContraseña{
-		margin: 10px;
-		font-size: 12px;
-	}
-	.botonesRegistro{
-		font-size: 10px;
-		margin: 15px;
-	}
-	.formularioSegundo{
-		text-align:left;
-		font-size: 15px;  
-		border: none;
-	}
-	.crearCuenta{
-		font-size: 20px;
-		text-decoration: underline;
-	}
-	.nuevoUsuario{
-		font-size: 12px;
-	}
-	.botonesNuevos{
-		font-weight: 500 ;
-		font-size: 15px;
-		color: #ffff;
-		background-color: #00178c;
-		border-color: #fff;
-		padding: 6px;
-		margin: 20px;  
-	}
-}
+
+/*INFORMACION*/
 #contenedorInformacion{
 	display: grid;
 	grid-template-areas:
@@ -577,7 +439,175 @@ iframe{
     list-style: square;
 	margin: 30px;
 }
+
+
+
+
 @media all and (max-width: 768px){
+	/*HOME*/
+	.bgImageFullScreen{
+		background-image: url('../assets/logoChico4.jpg');
+		background-size: center;		
+	}
+	#header{
+		background-color: #6f7ccb;
+		background-size: cover;
+		padding-top: 1vh;
+		height: 20vh;
+		font-size: 15px;		
+	}
+	#header .nav li{
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		font-size: 14px;
+	}
+	.logos{
+		flex-direction: column;
+		text-align: left;
+	}
+	#tituloProductos{
+		grid-area: titulo;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		margin: 50px;
+		font-weight: 500;
+		font-size: 20px;
+		margin-bottom: 5px;		
+	}
+	.productosDestacados{
+		grid-area: productos;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+	.productosDestacados .box p{
+		font-size: 12px;
+	}
+	.box{
+		width:auto;
+		margin: 20px;
+	}
+	.footer{
+		grid-area: footer;
+		display: flex;
+		flex-direction: column;
+		background-position: left;
+		margin: 20px;
+		height: auto;
+	}
+	.boxFooter p{
+		font-size: 14px;
+	}
+	.boxFooter li{
+		margin-top: 5px;
+	}
+	
+
+	/*NOVEDADES*/
+	.novedades{
+		grid-area: novedades;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		box-sizing: border-box;
+		height:auto;
+		border: none;
+	}
+	.novedades .titulo{
+		grid-area:novedades;
+		display: flex;
+		flex-direction: column;
+		margin: auto;		
+		font-size:20px;
+		text-align:left;
+		margin: 10px;
+	}
+	.novedades .boxNovedades{
+		font-size: 12px;
+		width:auto;
+		margin: 20px;
+		padding: 20px;
+	}
+	.boxNovedades img{
+		height: 100px;
+		width: 120px;
+	}
+	.botones{
+		font-size: 10px;
+		margin: 15px;	
+	}
+	/*CONTACTO*/
+	#contenedorContacto{
+		grid-template-areas:
+		"nav nav nav"
+		"mapa"
+		"formulario"
+		"footer";
+	}
+	.cajaContenedora{
+		border: none;
+	}
+	.mapaContacto iframe{
+		display: flex;
+		flex-direction: column;
+		justify-items: left;
+		width: auto;
+		height: auto;
+	}
+	.formulario{
+		text-align: left;	
+	}
+	.formulario p{
+		font-size: 18px;
+		text-align: left;	
+	}
+	.aceptoTerminos{
+		font-size: 10px;
+	}
+	.cajas{
+		font-size: 10px;
+		padding: 5px;
+		margin:5px;
+	}
+
+     	/*LISTA DE PRECIOS*/
+	.formularioIngreso{
+		border: none;
+	}
+	.formularioIngreso p{
+		font-size: 20px;
+	}
+	.olvidoContraseña{
+		margin: 10px;
+		font-size: 12px;
+	}
+	.botonesRegistro{
+		font-size: 10px;
+		margin: 15px;
+	}
+	.formularioSegundo{
+		text-align:left;
+		font-size: 15px;  
+		border: none;
+	}
+	.crearCuenta{
+		font-size: 20px;
+		text-decoration: underline;
+	}
+	.nuevoUsuario{
+		font-size: 12px;
+	}
+	.botonesNuevos{
+		font-weight: 500 ;
+		font-size: 15px;
+		color: #ffff;
+		background-color: #00178c;
+		border-color: #fff;
+		padding: 6px;
+		margin: 20px;  
+	}
 	.quienesSomos{
 		display: flex;
 		flex-direction: column;
@@ -608,6 +638,14 @@ iframe{
 	   
 	}
 }
+	
+
+
+
+
+
+
+
 
 
 

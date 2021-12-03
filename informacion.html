@@ -5,6 +5,10 @@
 	<meta charset="utf-8">
 	<meta name=viewport content=" width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/estilosNuevos.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
 	<div class="bgImageFullScreen"></div>
@@ -20,7 +24,7 @@
 		</div>
 		<div class="quienesSomos">
 			<p class="titulo">Quiénes Somos</p>
-			<img src="assets/collage.jpg" alt="informacion">
+			<img src="assets/collage.jpg" alt="informacion" class="animate__animated animate__backInLeft">
 			<p class="titulosSecundarios">Nuestra Misión</p>
 			<p class="texto">Somos una empresa que opera desde hace mas de 30 años, especializada en la distribución de autopartes y accesorios del automotor. Nuestra misión es ofrecer productos de calidad que se ajusten a las necesidades de cada cliente, que cumplan y excedan sus expetativas. Comercializamos productos de todas las marcas, entre los artículos que trabajamos se destacan: Capot / Guardabarros / Paragolpes / Puertas / Faros / Opticas / Espejos / Entre otros. 
 			Nuestro lema siempre fue, es y será:</p>
@@ -59,5 +63,9 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/wow.min.js"></script>
+    <script>
+     	 new WOW().init();
+    </script>
 </body>
 </html>
