@@ -4,27 +4,28 @@
 	<title>Quienes Somos</title>
 	<meta charset="utf-8">
 	<meta name=viewport content=" width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/estilosNuevos.css">
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+	<link rel="stylesheet" type="text/css" href="css/estilosBoostrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-	<div class="bgImageFullScreen"></div>
-	<div class="contenedorInformacion">
-		<div id="header">
-			<ul class="nav">
-				<li><a href="index.html">HOME</a></li>
-				<li class="active"><a href="informacion.html">QUIÉNES SOMOS</a></li>
-				<li><a href="novedades.html">NOVEDADES</a></li>
-				<li><a href="listaDePrecios.html">LISTA DE PRECIOS</a></li>
-				<li><a href="contacto.html">CONTACTO</a></li>
-			</ul>
+	<img src="assets/banner2.jpg" class="img-fluid" alt="imagen banner">
+	<div id="header" class="container-fluid">
+		<div class="container-md">
+			<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-2 align-right"><a class="inactive" href="index.html">HOME</a></div>
+					<div class="col-sm-12 col-md-2 align-right"><a class="active" href="informacion.html">QUIÉNES SOMOS</a></div>
+					<div class="col-sm-12 col-md-2 align-right"><a class="inactive" href="novedades.html">NOVEDADES</a></div>
+					<div class="col-sm-12 col-md-2 align-right"><a class="inactive" href="listaDePrecios.html">LISTA DE PRECIOS</a></div>
+					<div class="col-sm-12 col-md-2 align-right"><a class="inactive" href="contacto.html">CONTACTO</a></div>
+			</div>
 		</div>
+	</div>
 		<div class="quienesSomos">
 			<p class="titulo">Quiénes Somos</p>
-			<img src="assets/collage.jpg" alt="informacion" class="animate__animated animate__backInLeft">
+			<div class="text-center">
+  				<img src="assets/collage.jpg" alt="informacion" class="rounded animate__animated animate__backInLeft">
+			</div>
 			<p class="titulosSecundarios">Nuestra Misión</p>
 			<p class="texto">Somos una empresa que opera desde hace mas de 30 años, especializada en la distribución de autopartes y accesorios del automotor. Nuestra misión es ofrecer productos de calidad que se ajusten a las necesidades de cada cliente, que cumplan y excedan sus expetativas. Comercializamos productos de todas las marcas, entre los artículos que trabajamos se destacan: Capot / Guardabarros / Paragolpes / Puertas / Faros / Opticas / Espejos / Entre otros. 
 			Nuestro lema siempre fue, es y será:</p>
@@ -36,36 +37,40 @@
 					<li>Respeto</li>
 				</ul>
 		</div>
-		<div class="footer">
-			<div class="boxFooter">
-				<p>AUTOPARTES DISTRISUR</p>
-				<ul>
-					<li>Inicio</li>
-					<li>Quienes somos</li>
-					<li>Novedades</li>
-					<li>Lista de precios</li>
-					<li>Dejanos tu CV</li>
-					<li>Ayudanos a mejorar</li>
-					<li>Contacto</li>
-				</ul>
-			</div>
-			<div class="boxFooter">
-				<p>CONTACTENOS</p>
-				<ul>
-					<li>Dirección: Ramon franco 4123 - Remedios de Escalada</li>
-					<li>Telefono: (011) 4202-9711</li>
-					<li><a href="https://outlook.live.com/" target=""_blank>Mail</a></li>
-				</ul>
-			</div>
-			<div class="boxFooter">
-				<p>UBICACIÓN</p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13115.911193469921!2d-58.4104533!3d-34.730954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbbfea6266543d606!2sAutopartes%20Distrisur%20SH!5e0!3m2!1ses-419!2sar!4v1636141613348!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"></iframe>	
-			</div>
+		<div class="footer container-fluid">
+		<div class="container-md">
+				<div class="boxFooter row justify-content-xl-center mt-xl-4">
+					<div class="col-12 col-xl-4">
+						<p>AUTOPARTES DISTRISUR</p>
+						<ul>
+							<li>Inicio</li>
+							<li>Quienes somos</li>
+							<li>Novedades</li>
+							<li>Lista de precios</li>
+							<li>Dejanos tu CV</li>
+							<li>Ayudanos a mejorar</li>
+							<li>Contacto</li>
+						</ul>
+					</div>
+					 <div class="col-12 col-xl-4">
+						<p>CONTACTENOS</p>
+						<ul>
+							<li>Dirección: Ramon franco 4123 - Remedios de Escalada</li>
+							<li>Telefono: (011) 4202-9711</li>
+							<li><a href="https://outlook.live.com/" target=""_blank>Mail</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-xl-4">
+						<p>UBICACIÓN</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13115.911193469921!2d-58.4104533!3d-34.730954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbbfea6266543d606!2sAutopartes%20Distrisur%20SH!5e0!3m2!1ses-419!2sar!4v1636141613348!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"></iframe>
+					</div>	
+				</div>	
 		</div>
 	</div>
 	<script src="js/wow.min.js"></script>
     <script>
      	 new WOW().init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
