@@ -5,104 +5,148 @@
 	<meta charset="utf-8">
 	<meta name=viewport content=" width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/estilosBoostrap.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 	<img src="assets/banner2.jpg" class="img-fluid" alt="imagen banner">
-	<div id="header" class="container-fluid">
-		<div class="container-md">
-			<div class="row justify-content-center">
-					<div class="col-sm-12 col-md-2 align-right"><a class="active" href="index.html">HOME</a></div>
-					<div class="col-sm-12 col-md-2 align-right"><a class="inactive" href="informacion.html">QUIÉNES SOMOS</a></div>
-					<div class="col-sm-12 col-md-2 align-right"><a class="inactive" href="novedades.html">NOVEDADES</a></div>
-					<div class="col-sm-12 col-md-2 align-right"><a class="inactive" href="listaDePrecios.html">LISTA DE PRECIOS</a></div>
-					<div class="col-sm-12 col-md-2 align-right"><a class="inactive" href="contacto.html">CONTACTO</a></div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="informacion.html">Quienes Somos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="novedades.html">Novedades</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="listaDePrecios.html">Lista de precios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacto.html">Contacto</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-	</div>
+	</nav>
 	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-		  <div class="carousel-inner">
-		    <div class="carousel-item small active">
-		      <img src="assets/ford-logo.svg" class="d-block w-50" alt="Logo ford">
-		    </div>
-		    <div class="carousel-item big">
-		      <img src="assets/Fiat-logo.png" class="d-block w-50" alt="Logo Fiat">
-		    </div>
-		    <div class="carousel-item big">
-		      <img src="assets/Renault-Logo.png" class="d-block w-50" alt="Logo Renault">
-		    </div>
-		  </div>
-		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    <span class="visually-hidden">Previous</span>
-		  </button>
-		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    <span class="visually-hidden">Next</span>
-		  </button>
+		<div class="carousel-inner">
+			<div class="carousel-item small active">
+				<img src="assets/ford-logo.svg" class="d-block w-50" alt="Logo ford">
+			</div>
+			<div class="carousel-item big">
+				<img src="assets/Fiat-logo.png" class="d-block w-50" alt="Logo Fiat">
+			</div>
+			<div class="carousel-item big">
+				<img src="assets/Renault-Logo.png" class="d-block w-50" alt="Logo Renault">
+			</div>
+			<div class="carousel-item small">
+				<img src="assets/chevroletLogo.png" class="d-block w-50" alt="Logo Chevrolet">
+			</div>
+			<div class="carousel-item big">
+				<img src="assets/logoPeugeot.png" class="d-block w-50" alt="Logo Peugeot">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
 	</div>
-	<div id="tituloProductos" class="container-fluid">
-		<div class="container-md">
-			<p class="tituloPrincipal"> Productos destacados </p>
-			<div class="row justify-content-xl-center mt-xl-4 productosDestacados">
-					<div class="col-12 col-xl-2 box animate__animated animate__bounce">
-						<p>Optica izquierda Chevrolet Cruze 2016 L/N -Original-</p>
-						<img src="assets/opticaCruze.jpg" alt="optica Cruze" class="centrado">
+	<div class="novedades">
+		<p class="titulo">Productos Destacados</p>
+		<div id="cardsDestacadas" class="container-fluid">
+			<div class="container-md">
+				<div class="row justify-content-xl-center mt-xl-4 ">
+					<div class="card col-12 col-xl-2" style="width: 18rem;">
+						<img src="assets/opticaCruze.jpg" class="card-img-top" alt="Optica Cruze">
+						<div class="card-body">
+							<p class="card-text">Optica Chevrolet Cruze 2016 en adelante -Original-</p>
+						</div>
 					</div>
-					<div class="col-12 col-xl-2 box animate__animated animate__bounce productosDestacados">
-						<p>Faro trasero derecho color blanco Peugeot 208 -Original-</p>
-						<img src="assets/faro208.jpeg" alt="Faro 208" class="centrado">
+					<div class="card col-12 col-xl-2" style="width: 18rem;">
+						<img src="assets/faro208.jpeg" class="card-img-top" alt="Faro 208">
+						<div class="card-body">
+							<p class="card-text">Faro trasero derecho color blanco Peugeot 208 -Original-</p>
+						</div>
 					</div>
-					<div class="col-12 col-xl-2 box animate__animated animate__bounce productosDestacados">
-						<p>Guardabarro delantero izquierdo Fiat Tipo -Original-</p>
-				 		<img src="assets/guardabarroIdea.jpeg" alt="Guardabarro Idea" class="centrado">
+					<div class="card col-12 col-xl-2" style="width: 18rem;">
+						<img src="assets/rejillaVirtus.jpeg" class="card-img-top" alt="Rejilla Virtus">
+						<div class="card-body">
+							<p class="card-text">Rejilla central Volkswagen Virtus 2019 en adelante -Original-</p>
+						</div>
 					</div>
-					<div class="col-12 col-xl-2 box animate__animated animate__bounce productosDestacados">
-						<p>Puerta delantera izquierda Clio/Clio Mio -Original-</p>
-						<img src="assets/puertaClio.jpeg" alt="Puerta Clio" class="centrado">
+					<div class="card col-12 col-xl-2" style="width: 18rem;">
+						<img src="assets/parrillaCorolla.jpeg" class="card-img-top" alt="Parrilla Hilux">
+						<div class="card-body">
+							<p class="card-text">Parrilla de frente Toyota Corolla 2008/2011 -Original-</p>
+						</div>
 					</div>
+					<div class="card col-12 col-xl-2" style="width: 18rem;">
+						<img src="assets/panelCity.jpeg" class="card-img-top" alt="Panel City">
+						<div class="card-body">
+							<p class="card-text">Panel trasero Honda City 2009/2014 -Original-</p>
+						</div>
+					</div>
+					<div class="card col-12 col-xl-2" style="width: 18rem;">
+						<img src="assets/rejillaMegane.jpeg" class="card-img-top" alt="Rejilla Megane">
+						<div class="card-body">
+							<p class="card-text">Rejilla de torpedo Renault Megane -Original-</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="footer container-fluid">
 		<div class="container-md">
-				<div class="boxFooter row justify-content-xl-center mt-xl-4">
-					<div class="col-12 col-xl-4">
-						<p>AUTOPARTES DISTRISUR</p>
-						<ul>
-							<li>Inicio</li>
-							<li>Quienes somos</li>
-							<li>Novedades</li>
-							<li>Lista de precios</li>
-							<li>Dejanos tu CV</li>
-							<li>Ayudanos a mejorar</li>
-							<li>Contacto</li>
-						</ul>
-					</div>
-					 <div class="col-12 col-xl-4">
-						<p>CONTACTENOS</p>
-						<ul>
-							<li>Dirección: Ramon franco 4123 - Remedios de Escalada</li>
-							<li>Telefono: (011) 4202-9711</li>
-							<li><a href="https://outlook.live.com/" target=""_blank>Mail</a></li>
-						</ul>
-					</div>
-					<div class="col-12 col-xl-4">
-						<p>UBICACIÓN</p>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13115.911193469921!2d-58.4104533!3d-34.730954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbbfea6266543d606!2sAutopartes%20Distrisur%20SH!5e0!3m2!1ses-419!2sar!4v1636141613348!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"></iframe>
-					</div>	
+			<div class="boxFooter row justify-content-xl-center mt-xl-4">
+				<div class="col-12 col-xl-4">
+					<p>AUTOPARTES DISTRISUR</p>
+					<ul>
+						<li>Inicio</li>
+						<li>Quienes somos</li>
+						<li>Novedades</li>
+						<li>Lista de precios</li>
+						<li>Dejanos tu CV</li>
+						<li>Ayudanos a mejorar</li>
+						<li>Contacto</li>
+					</ul>
+				</div>
+				<div class="col-12 col-xl-4">
+					<p>CONTACTENOS</p>
+					<ul>
+						<li>Dirección: Ramon franco 4123 - Remedios de Escalada</li>
+						<li>Telefono: (011) 4202-9711</li>
+						<li><a href="https://outlook.live.com/" target=""_blank>Mail</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-xl-4">
+					<p>UBICACIÓN</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13115.911193469921!2d-58.4104533!3d-34.730954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbbfea6266543d606!2sAutopartes%20Distrisur%20SH!5e0!3m2!1ses-419!2sar!4v1636141613348!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"></iframe>
 				</div>	
+			</div>	
 		</div>
 	</div>
-   <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
 
