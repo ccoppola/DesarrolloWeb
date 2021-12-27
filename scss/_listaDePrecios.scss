@@ -1,0 +1,68 @@
+/*Lista de precios*/
+
+.tituloIngresar {
+
+	h1{
+		@include font;
+		font-size: 2rem;
+		text-decoration: underline;
+		margin: 20px 20px 0 20px;
+		text-align: left;
+		@media all and (max-width: $media-querie){
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.titulo {
+	h1{
+		@include font;
+		@include tamañoLetra (2rem);
+		text-decoration: underline;
+		margin: 20px;
+		text-align: center;
+		@media all and (max-width: $media-querie){
+			@include tamañoLetra (1.5rem);
+		}
+	}
+}
+
+#nuevaCuenta{
+	@include tamañoLetra (1rem);
+	text-align: center;
+	margin-bottom: 25px;
+	@media all and (max-width: $media-querie){
+			@include tamañoLetra (0.9rem);
+		}
+}
+
+.align-right {
+	text-align: right;
+}
+.form-check{
+	margin-top: 20px;
+}
+.row {
+	.boton{
+		margin-top: 40px;
+		border-radius: 10px;
+		@media all and (max-width: $media-querie){
+			margin-left: 30px;
+		}
+	}
+	.form-check-label{
+		@include font;
+		@include tamañoLetra (0.9rem);
+	}
+	.email{
+		margin: 20px;
+	}
+	.contraseña{
+		margin: 20px;
+	}
+	.botonIngreso{
+		margin: 20px;
+	}
+}
+
+ 

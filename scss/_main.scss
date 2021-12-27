@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: $font-Jost;
+	font-weight: map-get($miMap, semiBold);
+}
+
+.imagenContainer{
+	display: flex;
+	justify-content: center;
+}
+
+/*Nav Bar*/
+.img-fluid{
+	content: url('../assets/banner2.jpg');
+	@media all and (max-width: $media-querie){
+		height: 25vh;
+		content: url('../assets/logoChico4.jpg');
+	}
+
+}
+.navbar{
+	&.bgColor{
+		background-color: $background-nav;
+		
+	}		
+}
+#navbarNav .navbar-nav{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		background-color: $background-nav; 
+		&:hover{
+			background-color: #B2AAFD;		
+		}	   
+}  
+.nav-item{
+	margin:  20px;
+	@include tamañoLetra (1.5rem);
+}
+/*Carousel*/
+
+#carouselExampleControls {
+	height: ($height/2) + 30vh;
+	@media all and (max-width: $media-querie){
+			height: 25vh;
+	}
+	.carousel-item{
+		margin-left: 25%;
+	}	
+}
+
+.small{
+	margin-top: 80px;
+}
+.big{
+	margin-top: 20px;
+}
+
+/*Productos destacados*/
+.titulo{
+	@include display;
+	text-align: center;
+	@include tamañoLetra (2rem);
+	@media all and (max-width: $media-querie){
+		@include tamañoLetra (1.5rem);
+		text-align: left;
+		margin: 20px;
+	}
+}
+.card-img-top{
+	height: 150px;
+	margin-top: 15px;
+}
+.card{
+	margin: 10px;
+	font-family:  $font-Jost;
+	font-weight: map-get($miMap, light);
+	@include tamañoLetra (1rem);
+	transition: all 200ms ease-in-out;
+		&:hover{
+			transform: scale(1.1);
+		}
+	&.card-body{
+		background-color: #d7daff;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+}
+
+
+/*Footer*/
+.footer{
+	background-color:$backgroundFooter;
+	background-size: cover;	
+	height: 60vh;
+	padding: 10px;
+	margin-top: 100px;
+}
+.boxFooter {
+	p{
+		font-family: $font-robotoCondensed;
+		font-weight: map-get($miMap, bold);
+		text-decoration: underline;
+		text-align: left;
+		@include tamañoLetra (0.9rem);
+	}
+	li{
+		margin: 10px;
+		list-style: square;
+		font-family: $font-robotoCondensed;
+		font-weight: map-get($miMap, light);
+		@include tamañoLetra (0.8rem);
+	}
+}
+iframe{
+	border: 0;
+	margin-top: 5px;	
+}
