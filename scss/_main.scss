@@ -7,20 +7,8 @@ body{
 	font-weight: map-get($miMap, semiBold);
 }
 
-.imagenContainer{
-	display: flex;
-	justify-content: center;
-}
-
 /*Nav Bar*/
-.img-fluid{
-	content: url('../assets/banner2.jpg');
-	@media all and (max-width: $media-querie){
-		height: 25vh;
-		content: url('../assets/logoChico4.jpg');
-	}
-
-}
+	
 .navbar{
 	&.bgColor{
 		background-color: $background-nav;
@@ -34,29 +22,26 @@ body{
 		background-color: $background-nav; 
 		&:hover{
 			background-color: #B2AAFD;		
-		}	   
+		}
 }  
 .nav-item{
 	margin:  20px;
 	@include tamañoLetra (1.5rem);
+	@media all and (max-width: $media-querie){
+		@include tamañoLetra (1rem);
+	}
+
 }
 /*Carousel*/
 
 #carouselExampleControls {
-	height: ($height/2) + 30vh;
-	@media all and (max-width: $media-querie){
-			height: 25vh;
-	}
+	margin: 38px;
 	.carousel-item{
-		margin-left: 25%;
-	}	
-}
-
-.small{
-	margin-top: 80px;
-}
-.big{
-	margin-top: 20px;
+		margin-left: 40%;
+		@media all and (max-width: $media-querie){
+			margin-left: 10%;
+		}
+	}
 }
 
 /*Productos destacados*/
@@ -95,7 +80,7 @@ body{
 .footer{
 	background-color:$backgroundFooter;
 	background-size: cover;	
-	height: 60vh;
+	height: auto;
 	padding: 10px;
 	margin-top: 100px;
 }
@@ -105,15 +90,15 @@ body{
 		font-weight: map-get($miMap, bold);
 		text-decoration: underline;
 		text-align: left;
-		@include tamañoLetra (0.9rem);
+		@include tamañoLetra (0.8rem);
 	}
 	li{
 		margin: 10px;
 		list-style: square;
 		font-family: $font-robotoCondensed;
 		font-weight: map-get($miMap, light);
-		@include tamañoLetra (0.8rem);
-	}
+		@include tamañoLetra (0.7rem);
+	}	
 }
 iframe{
 	border: 0;

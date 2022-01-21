@@ -30,7 +30,7 @@
 	padding-top: 1vh;
 	text-align: center;
 	max-width: 1140px;
-	margin:20px;
+	margin:50px;
 	text-decoration: none;
 	@media all and (max-width: $media-querie){
 		@include tamañoLetra (1rem);
@@ -42,7 +42,7 @@
 	font-weight: map-get($miMap, superBold);
 	font-style: italic;
 	text-align: center;
-	@include tamañoLetra (1.5rem);
+	@include tamañoLetra (1.4rem);
 	color: #6f7ccb;
 	height: $height - 90vh;
 	@media all and (max-width: $media-querie){
@@ -53,10 +53,9 @@
 }
 .titulosSecundarios{
 	margin: 10px;
-	font-style: italic;
 	font-weight: map-get($miMap, Bold);
-	@include tamañoLetra (1.3rem);
-	text-align: left;
+	@include tamañoLetra (1.5rem);
+	text-align: center;
 	text-decoration: underline;
 	padding-top: 1vh;
 	@media all and (max-width: $media-querie){
@@ -64,13 +63,25 @@
 		text-align: left;
 		}
 }
-.listaValores li{
-    list-style: square;
-	margin: 30px;
+
+.listaValores{
+	margin: 20px;
 	@include font;
 	color: #5d5d5d;
 	@media all and (max-width: $media-querie){
 		@include tamañoLetra (0.9rem);
 		text-align: left;
+	}
+	.btn-outline-info{
+		color: #ffff;
+		background-color: #6f7ccb;
+		border-color: #6f7ccb;
+		&:hover{
+			color: #000000;
+			background-color: #bec4fe;
+			border-color: #bec4fe;
 		}
+	}	
 }
+
+		
