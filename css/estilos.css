@@ -189,22 +189,18 @@ iframe {
       text-align: left; } }
 
 .listaValores {
-  margin: 20px;
+  margin-top: 20px;
   font-family: "Jost", sans-serif;
   font-weight: 500;
-  color: #5d5d5d; }
+  color: #000000;
+  text-align: right; }
+  .listaValores .cajaValores button {
+    margin-top: 10px; }
   @media all and (max-width: 768px) {
     .listaValores {
       font-size: 0.9rem;
-      text-align: left; } }
-  .listaValores .btn-outline-info {
-    color: #ffff;
-    background-color: #6f7ccb;
-    border-color: #6f7ccb; }
-    .listaValores .btn-outline-info:hover {
-      color: #000000;
-      background-color: #bec4fe;
-      border-color: #bec4fe; }
+      text-align: left;
+      margin-left: 10px; } }
 
 /*Novedades*/
 .novedades .titulo {

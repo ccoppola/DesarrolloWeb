@@ -63,25 +63,22 @@
 		text-align: left;
 		}
 }
-
 .listaValores{
-	margin: 20px;
+	margin-top: 20px;
 	@include font;
-	color: #5d5d5d;
+	color: #000000;
+	text-align: right;
+	.cajaValores{
+		button{
+			margin-top: 10px;
+		}
+	}
 	@media all and (max-width: $media-querie){
 		@include tamañoLetra (0.9rem);
 		text-align: left;
+		margin-left: 10px;
 	}
-	.btn-outline-info{
-		color: #ffff;
-		background-color: #6f7ccb;
-		border-color: #6f7ccb;
-		&:hover{
-			color: #000000;
-			background-color: #bec4fe;
-			border-color: #bec4fe;
-		}
-	}	
+	
 }
 
 		
